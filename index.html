@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Event Photographs & Lives | REDtone 2026
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+    <main class="event-page">
+
+
+        <!-- =====================================================
+             PAGE HEADER
+        ====================================================== -->
+
+        <header class="event-header">
+
+            <div class="event-header-logo">
+                <span>RED</span>tone
+            </div>
+
+            <h1>
+                EVENT
+                <span>PHOTOGRAPHS</span>
+                &amp; LIVES
+            </h1>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             MEDIA GALLERIES
+        ====================================================== -->
+
+        <section class="media-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Media Galleries
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-cards">
+
+                <button
+                    class="gallery-card active"
+                    type="button"
+                    data-day="1"
+                >
+
+                    <span class="gallery-icon">
+                        ▧
+                    </span>
+
+                    <strong>
+                        DAY1-DUTA
+                    </strong>
+
+                    <span>
+                        Click to view gallery
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MOVING EVENT FILMSTRIP
+        ====================================================== -->
+
+        <section
+            class="filmstrip-section"
+            id="eventFilmstrip"
+        >
+
+            <div class="filmstrip-heading">
+
+                <div>
+
+                    <span class="filmstrip-eyebrow">
+                        REDTONE 2026
+                    </span>
+
+                    <h2>
+                        Latest Event Moments
+                    </h2>
+
+                </div>
+
+
+                <div class="filmstrip-status">
+
+                    <span class="live-dot"></span>
+
+                    <span id="currentDayLabel">
+                        DAY 1
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DAY FILTERS
+                 Hidden during tournament if you prefer.
+                 After tournament these can become useful.
+            -->
+
+            <div
+                class="day-filters"
+                id="dayFilters"
+            >
+
+                <button
+                    type="button"
+                    class="day-filter active"
+                    data-filter="latest"
+                >
+                    LATEST
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="all"
+                >
+                    ALL DAYS
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="1"
+                >
+                    DAY 1
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="2"
+                >
+                    DAY 2
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="3"
+                >
+                    DAY 3
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="4"
+                >
+                    DAY 4
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="5"
+                >
+                    DAY 5
+                </button>
+
+                <button
+                    type="button"
+                    class="day-filter"
+                    data-filter="6"
+                >
+                    DAY 6
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILM FRAME
+            ================================================== -->
+
+            <div class="film-frame">
+
+
+                <!-- TOP FILM HOLES -->
+
+                <div
+                    class="film-holes film-holes-top"
+                    aria-hidden="true"
+                ></div>
+
+
+
+                <!-- MOVING PHOTOS -->
+
+                <div class="film-window">
+
+                    <div
+                        class="film-track"
+                        id="filmTrack"
+                    >
+                        <!--
+                            JavaScript inserts photos here.
+                        -->
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOTTOM FILM HOLES -->
+
+                <div
+                    class="film-holes film-holes-bottom"
+                    aria-hidden="true"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- FILMSTRIP FOOTER -->
+
+            <div class="filmstrip-footer">
+
+                <span id="filmstripDescription">
+                    Showing the latest uploaded tournament moments
+                </span>
+
+                <span>
+                    REDTONE • KL • 2026
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SOCIAL MEDIA
+        ====================================================== -->
+
+        <section class="social-section">
+
+            <p>
+                Follow our live coverage and photo galleries
+                on the platforms below.
+            </p>
+
+
+            <div class="social-grid">
+
+
+                <a
+                    href="#"
+                    class="social-card"
+                >
+
+                    <div class="social-icon">
+                        f
+                    </div>
+
+                    <strong>
+                        Facebook
+                    </strong>
+
+                    <span>
+                        Photo albums &amp; live posts
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="social-card"
+                >
+
+                    <div class="social-icon instagram-icon">
+                        ◎
+                    </div>
+
+                    <strong>
+                        Instagram
+                    </strong>
+
+                    <span>
+                        Stories &amp; galleries
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="social-card"
+                >
+
+                    <div class="social-icon">
+                        ♪
+                    </div>
+
+                    <strong>
+                        TikTok
+                    </strong>
+
+                    <span>
+                        Short highlights &amp; reels
+                    </span>
+
+                </a>
+
+
+
+                <a
+                    href="#"
+                    class="social-card"
+                >
+
+                    <div class="social-icon youtube-icon">
+                        ▶
+                    </div>
+
+                    <strong>
+                        YouTube
+                    </strong>
+
+                    <span>
+                        Live streams &amp; match replays
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         PHOTO LIGHTBOX
+    ========================================================== -->
+
+    <div
+        class="photo-lightbox"
+        id="photoLightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            type="button"
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close photo"
+        >
+            ×
+        </button>
+
+
+        <button
+            type="button"
+            class="lightbox-arrow lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Previous photo"
+        >
+            ‹
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="REDtone tournament"
+            >
+
+            <div class="lightbox-info">
+
+                <span id="lightboxDay">
+                    DAY 1
+                </span>
+
+                <span id="lightboxCounter">
+                    01 / 01
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="lightbox-arrow lightbox-next"
+            id="lightboxNext"
+            aria-label="Next photo"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
